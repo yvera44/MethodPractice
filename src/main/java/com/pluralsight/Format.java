@@ -3,10 +3,11 @@ package com.pluralsight;
 public class Format {
     public static void main(String[] args) {
 
-        formatName("Yair", " Vera");
+        String fullName = formatName("Yair ", "Vera");
+        System.out.println(fullName);
 
     }
-    public static void formatName(String first, String last){
-        System.out.println(last + first);
+    public static String formatName(String first, String last){
+        return first + last;
     }
 }
